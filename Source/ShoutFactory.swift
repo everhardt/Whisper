@@ -200,9 +200,9 @@ public class ShoutView: UIView {
       self.frame.size.height = 0
       self.backgroundView.frame.size.height = self.frame.height
       }, completion: { finished in
-        self.completion?()
         self.displayTimer.invalidate()
         self.removeFromSuperview()
+        self.completion?()
     })
   }
 
